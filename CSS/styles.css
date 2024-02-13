@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#box {
+    background-color: blue;
+}
+
+.heading {
+    color: red;
+}
+
+button {
+    background-color: green;
+}
+
+.circle {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border-radius: 50%;
+}
+
+.traffic-light {
+    background-color: black;
+    padding: 2px;
+    width: fit-content;
+}
+
+.red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;    
+}
+
+.yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;    
+}
+
+.green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;    
+}
+
+div > div {
+    margin: 25px;
+}
+
+.nav-bar {
+    background-color: #0F1111;
+    height: 60px;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 25px;
+    color: #F08804;
+}
+
+button {
+    background-color: #F08804;
+    padding: 2px;
+}

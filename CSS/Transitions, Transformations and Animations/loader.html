@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+        .loader {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 700ms ease-in 1s infinite;
+        }
+
+        .loader-2 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 25px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 700ms ease-in 1s infinite;
+        }
+
+        .loader-3 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 1s ease-in-out 0s infinite;
+        }
+
+        .loader-4 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 700ms steps(4) 0s infinite;
+        }
+
+        .loader-5 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 500ms steps(20) 0s infinite;
+        }
+
+        .loader-6 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #03045e;
+            border-top: 10px solid #00b4d8;
+            animation: loadingAnimation 3s steps(100) 0s infinite;
+        }
+
+        .loader-7 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 75px solid #03045e;
+            border-top: 55px solid #00b4d8;
+            animation: loadingAnimation 700ms ease-in 1s infinite;
+        }
+
+        .loader-8 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border-top: 2px solid #00b4d8;
+            animation: loadingAnimation 1s ease-in 0s infinite;
+        }
+        
+        .loader-9 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 0 solid #03045e;
+            border-top: 2px solid #00b4d8;
+            animation: loadingAnimation 2s steps(200) 0s infinite;
+        }
+
+        .loader-10 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid #03045e;
+            border-top: 0px solid #00b4d8;
+            animation: loadingAnimation 2s steps(20) 1s infinite;
+        }
+
+        @keyframes loadingAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        p {
+            position: fixed;
+            bottom: 20px;     
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <div class="loader-2"></div>
+        <div class="loader-3"></div>
+        <div class="loader-4"></div>
+        <div class="loader-5"></div>
+        <div class="loader-6"></div>
+        <div class="loader-7"></div>
+        <div class="loader-8"></div>
+        <div class="loader-9"></div>
+        <div class="loader-10"></div>
+    </div>
+    <p><a href="./index.html">Back</a></p>
+</body>
+</html>

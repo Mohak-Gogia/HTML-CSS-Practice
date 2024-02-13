@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        /* Custom global variable */
+        :root {
+            --primary-color: brown;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: beige;
+            border: 2px solid black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: green;
+            width: 350px;
+            height: 350px;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 10px 10px 50px 50px var(--primary-color);
+        }
+        h2 {
+            text-shadow: yellowgreen 12px 12px;
+            margin-bottom: 20px;
+        }
+        bhai {
+            font-weight: 900;
+        }
+        bhai::after {
+            content: '*';
+            color: red;
+        }
+        bhai::first-letter {
+            font-size: 2rem;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="../../HTML/html_logo_300x300.png" width="100" height="100" alt="HTML LOGO"/>
+            <h2>Study shadowing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum quasi asperiores similique? Deleniti maxime illo facere, sint corrupti aperiam unde architecto, vel animi aut asperiores laborum quisquam nulla totam! Magnam sunt eveniet mollitia rerum officiis voluptatem sed dicta. Minima aliquam voluptatibus esse iste dolores iure nulla? Porro.</p>
+        </div>
+    </div>
+    <bhai>Custom tag ki testing h bhai</bhai>
+</body>
+</html>

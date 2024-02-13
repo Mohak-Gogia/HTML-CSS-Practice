@@ -1,0 +1,128 @@
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    color: white;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+    transform: rotate(45deg);
+}
+
+div:hover {
+    background-color: rgb(193, 255, 68);
+    color: black;
+    font-size: 100px;
+    transform: scale(1.2);
+}
+
+div:active {
+    background-color: rgb(31, 46, 2);
+    color: grey;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center {
+    position: fixed;
+    top: 50px;
+    left: 200px;
+}
+
+.animate {
+    background-color: fuchsia;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top: 300px;
+    animation-name: colorAnimate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorAnimate {
+    from { 
+        background-color: fuchsia;
+        top: 300px;
+        left: 30px;
+    }
+    to {
+        background-color: red;
+        top: 600px;
+        left: 60px;
+    }
+}
+
+.animate-two {
+    background-color: fuchsia;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top: 300px;
+    animation-name: colorAnimate2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes colorAnimate2 {
+    from { 
+        background-color: fuchsia;
+        top: 300px;
+        right: 30px;
+    }
+    to {
+        background-color: red;
+        top: 600px;
+        right: 60px;
+    }
+}
+
+.animate-three {
+    background: rgb(52, 191, 237);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    right: 680px;
+    position: fixed;
+    animation-name: colorAnimate3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes colorAnimate3 {
+    from { 
+        background: rgb(52, 191, 237);
+        transform: scale(0);
+    }
+    to {
+        background-color: blue;
+        transform: scale(2);
+    }
+}
+
+span {
+    position: fixed;
+    bottom: 20px;
+}
+
+h2 {
+    position: absolute;
+    bottom: 20px;
+}
